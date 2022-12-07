@@ -1,0 +1,28 @@
+@media screen and (min-width: $tablet) {
+  .card-set {
+    display: flex;
+    flex-wrap: wrap;
+    // justify-content: center;
+    justify-content: flex-start;
+    gap: $indent;
+  }
+  .card-set__item {
+    $items: 2;
+    flex-basis: calc((100% - $indent * ($items - 1)) / ($items));
+    @media screen and (min-width: $desktop) {
+      $items: 3;
+      flex-basis: calc((100% - $indent * ($items - 1)) / ($items));
+    }
+    transition: box-shadow $timing-function;
+    &:hover {
+      box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+        1px 4px 6px rgba(0, 0, 0, 0.16);
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .card-set__item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}

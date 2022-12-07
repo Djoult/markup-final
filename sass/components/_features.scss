@@ -1,0 +1,48 @@
+@media screen and (min-width: $tablet) {
+  .features__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: $indent;
+  }
+  .features__item {
+    $items: 2;
+    flex-basis: calc((100% - $indent * ($items - 1)) / ($items));
+    @media screen and (min-width: $desktop) {
+      $items: 4;
+      flex-basis: calc((100% - $indent * ($items - 1)) / ($items));
+    }
+    //   flex-basis: 270px;
+  }
+}
+
+.features__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+  background-color: $team-section-bg-color;
+  height: 120px;
+}
+@media screen and (max-width: 767px) {
+  .features__item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+
+.features__name {
+  @media screen and (max-width: 767px) {
+    text-align: center;
+  }
+  margin-bottom: 10px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+.features__text {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: $phone-color;
+}

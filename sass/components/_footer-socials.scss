@@ -1,0 +1,39 @@
+.footer-socials {
+  @media screen and (max-width: 767px) {
+    margin-bottom: 60px;
+  }
+  @media screen and (min-width: $tablet) and (max-width: 1199px) {
+    margin-left: 165px;
+  }
+  @media screen and (min-width: $desktop) {
+    margin-left: 70px;
+  }
+}
+
+.footer-socials__subtitle {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: $primary-color;
+  margin-bottom: 20px;
+  @media screen and (min-width: $desktop) {
+    text-align: left;
+  }
+}
+
+.socials__link--dark {
+  @extend .socials__link;
+  background-color: $footer-socials-bg-color;
+  color: $primary-color;
+  transition: color $timing-function, background-color $timing-function;
+  &:hover,
+  &:focus {
+    background-color: $accent-color;
+    color: $primary-color;
+  }
+}
+.socials__icon {
+  fill: currentColor;
+}

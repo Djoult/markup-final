@@ -1,0 +1,69 @@
+.data-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: $data-modal-color;
+  /* visibility: visible; */
+  opacity: 1;
+  transition: opacity $timing-function;
+}
+
+.data-modal.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+  /* visibility: hidden; */
+}
+
+.data-modal.is-hidden .modal {
+  /* visibility: hidden; */
+  transform: translate(-50%, -50%) scale(1.1);
+}
+
+.modal {
+  /* visibility: visible; */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  @media screen and (max-width: 480px) {
+    width: calc(100% - 30px);
+    min-height: 609px;
+  }
+  @media screen and (min-width: 480px) and (max-width: 767px) {
+    min-width: 450px;
+    min-height: 609px;
+  }
+  @media screen and (min-width: $tablet) {
+    min-width: 528px;
+    min-height: 581px;
+  }
+
+  background-color: $primary-color;
+  transform: translate(-50%, -50%) scale(1);
+  transition: transform $timing-function;
+}
+.modal-close {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 30px;
+  height: 30px;
+  margin-right: 8px;
+  margin-top: 8px;
+  border-radius: 50%;
+  color: $logo-color;
+  background-color: $primary-color;
+  @include border-generator($close-border-color);
+}
+.modal-close:hover .close-icon {
+  fill: $accent-color;
+}
+.close-icon {
+  transition: fill $timing-function;
+  fill: currentColor;
+}

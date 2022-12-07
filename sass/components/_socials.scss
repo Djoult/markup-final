@@ -1,0 +1,27 @@
+.socials {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+.socials__item {
+  flex-basis: 44px;
+}
+.socials__link {
+  width: 44px;
+  height: 44px;
+  padding: 12px;
+
+  border-radius: 50%;
+  display: block;
+  background-color: transparent;
+  color: $clients-logo-color;
+  transition: color $timing-function, background-color $timing-function;
+}
+.socials__link:hover,
+.socials__link:focus {
+  background-color: $accent-color;
+  color: $primary-color;
+}
+.socials__icon {
+  fill: currentColor;
+}

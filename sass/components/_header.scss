@@ -1,0 +1,19 @@
+.header {
+  border-bottom: 1px solid $border-bottom-color;
+}
+.header__container {
+  display: flex;
+  align-items: center;
+  min-height: 60px;
+}
+
+.header__logo {
+  @media screen and (max-width: $tablet) {
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+  @media screen and (min-width: $tablet) and (max-width: 1199px) {
+    padding-top: 24px;
+    padding-bottom: 25px;
+  }
+}
