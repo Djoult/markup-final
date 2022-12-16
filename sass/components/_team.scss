@@ -15,6 +15,9 @@
     flex-wrap: wrap;
     gap: 30px;
   }
+  @media screen and (min-width: $desktop) {
+    flex-wrap: nowrap;
+  }
 }
 .team__item {
   background-color: $primary-color;

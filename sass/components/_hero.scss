@@ -59,9 +59,6 @@
   box-shadow: 0px 4px 4px $box-shadow-color;
   border-radius: 4px;
   padding: 10px 24px;
-  // @media screen and (min-width: $mobile) {
-  //   padding: 10px 24px;
-  // }
   @media screen and (min-width: $desktop) {
     padding: 10px 32px;
   }
@@ -71,4 +68,10 @@
   align-items: center;
   letter-spacing: 0.06em;
   color: $primary-color;
+  transition: color $timing-function, background-color $timing-function;
+  &:hover,
+  :focus {
+    color: $accent-color;
+    background-color: $primary-color;
+  }
 }

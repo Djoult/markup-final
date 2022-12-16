@@ -196,7 +196,22 @@
           <ul class="activity__list list">
             <li class="activity__item">
               <article class="activity__thumb">
-                <img src="./images/box1.jpg" alt="Чим ми займаємось" width="370" />
+                <picture>
+                  <source
+                    srcset="./images/activity/a1@1x.jpg 1x, ./images/activity/a1@2x.jpg 2x"
+                    media="(min-width: 1200px)"
+                    type="image/jpg"
+                  />
+
+                  <img
+                    class="activity__image"
+                    src="./images/activity/a1@1x.jpg"
+                    alt="Десктопні додатки"
+                    width="370"
+                    height="294"
+                    loading="lazy"
+                  />
+                </picture>
                 <div class="activity__meta">
                   <h3 class="activity__name">Десктопні додатки</h3>
                 </div>
@@ -204,7 +219,22 @@
             </li>
             <li class="activity__item">
               <article class="activity__thumb">
-                <img src="./images/box2.jpg" alt="Чим ми займаємось" width="370" />
+                <picture>
+                  <source
+                    srcset="./images/activity/a2@1x.jpg 1x, ./images/activity/a2@2x.jpg 2x"
+                    media="(min-width: 1200px)"
+                    type="image/jpg"
+                  />
+
+                  <img
+                    class="activity__image"
+                    src="./images/activity/a2@1x.jpg"
+                    alt="Мобільні додатки"
+                    width="370"
+                    height="294"
+                    loading="lazy"
+                  />
+                </picture>
                 <div class="activity__meta">
                   <h3 class="activity__name">Мобільні додатки</h3>
                 </div>
@@ -212,7 +242,22 @@
             </li>
             <li class="activity__item">
               <article class="activity__thumb">
-                <img src="./images/box3.jpg" alt="Чим ми займаємось" width="370" />
+                <picture>
+                  <source
+                    srcset="./images/activity/a3@1x.jpg 1x, ./images/activity/a3@2x.jpg 2x"
+                    media="(min-width: 1200px)"
+                    type="image/jpg"
+                  />
+
+                  <img
+                    class="activity__image"
+                    src="./images/activity/a3@2x.jpg"
+                    alt="Дизайнерські рішення"
+                    width="370"
+                    height="294"
+                    loading="lazy"
+                  />
+                </picture>
                 <div class="activity__meta">
                   <h3 class="activity__name">Дизайнерські рішення</h3>
                 </div>
@@ -253,6 +298,8 @@
                     class="teammate__photo"
                     src="./images/team/mobile/teammate1-mobile.jpg"
                     alt="Ігор Дем'яненко"
+                    width="450"
+                    height="460"
                   />
                 </picture>
 
@@ -333,6 +380,8 @@
                     class="teammate__photo"
                     src="./images/team/mobile/teammate2-mobile.jpg"
                     alt="Ольга Рєпіна"
+                    width="450"
+                    height="460"
                   />
                 </picture>
 
@@ -413,6 +462,8 @@
                     class="teammate__photo"
                     src="./images/team/mobile/teammate3-mobile.jpg"
                     alt="Микола Тарасов"
+                    width="450"
+                    height="460"
                   />
                 </picture>
                 <div class="teammate__info">
@@ -492,6 +543,8 @@
                     class="teammate__photo"
                     src="./images/team/mobile/teammate4-mobile.jpg"
                     alt="Михайло Єрмаков"
+                    width="450"
+                    height="460"
                   />
                 </picture>
 

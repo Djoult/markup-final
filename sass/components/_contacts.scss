@@ -1,11 +1,6 @@
 .contacts {
   display: flex;
   margin-left: auto;
-  // flex-wrap: wrap;
-  //
-  // margin-left: 96px;
-  // align-items: center;
-  // width: 138px;
 
   @media screen and (max-width: 767px) {
     display: none;
@@ -25,9 +20,7 @@
     margin-left: 50px;
   }
 }
-// .contacts__item {
-//   align-self: center;
-// }
+
 .contacts__link {
   font-weight: 500;
   @media screen and (min-width: $tablet) and (max-width: 1199px) {

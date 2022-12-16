@@ -100,13 +100,22 @@
   background: $accent-color;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
+  transition: color $timing-function, background-color $timing-function;
+  &:hover,
+  :focus {
+    color: $accent-color;
+    background-color: $primary-color;
+  }
 }
 
 .subscribe-form__icon {
   margin-left: 10px;
+  fill: $primary-color;
+  transition: fill $timing-function;
 }
 
 .subscribe-form__button:hover .subscribe-form__icon,
 .subscribe-form__button:focus .subscribe-form__icon {
   animation: wiggle 2500ms cubic-bezier(0.4, 0, 0.2, 1);
+  fill: $accent-color;
 }

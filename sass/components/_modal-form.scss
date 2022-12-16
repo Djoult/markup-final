@@ -128,17 +128,12 @@
 .modal-form__terms {
   display: flex;
   align-items: center;
-  // @media screen and (min-width: 480px) {
-  //   align-items: center;
-  // }
 
   margin-bottom: 30px;
 }
 .modal-form__terms-label {
   user-select: none;
-  /* position: absolute; */
   text-align: center;
-  /* display: block; */
   display: inline-block;
 
   font-size: 12px;
@@ -185,7 +180,6 @@
 /* Modal submit button */
 
 .modal-form__submit-btn {
-  /* position: absolute; */
   display: block;
   margin: 0 auto;
   min-width: 200px;
